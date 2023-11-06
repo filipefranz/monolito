@@ -1,5 +1,5 @@
 export interface GenerateInvoiceFacadeInputDto {
-  id: string
+  id?: string
   name: string
   document: string
   street: string
@@ -34,7 +34,7 @@ export interface GenerateInvoiceFacadeOutputDto {
 }
 
 export interface FindInvoiceFacadeInputDto {
-  id: string
+  id: string | undefined
 }
 
 export interface FindInvoiceFacadeOutputDto {
